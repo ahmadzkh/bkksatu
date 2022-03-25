@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+/* CUSTOMIZING TITLE PAGE */
+
+.title-page h1.fw-bold {
+    margin-top: -18px;
+    margin-bottom: 0px;
+}
+
+.waves {
+    z-index: -1;
+}
+
+.swal-modal {
+    border-radius: 15px;
+}
+
+
+/* COSTUMIZING SIDEBAR */
+
+.content-wrapper {
+    margin-left: 100px;
+}
+
+.navbar-wrapper {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 85px;
+    height: 100%;
+    background: white;
+}
+
+.navbar-wrapper .navbar-item i,
+.navbar-wrapper .navbar-logout i {
+    font-size: 28px;
+}
+
+.navbar-wrapper .navbar-item span,
+.navbar-wrapper .navbar-logout span {
+    font-size: 16px;
+}
+
+.navbar-wrapper .navbar-item:hover {
+    /*margin: 10px;*/
+    border-radius: 0px 20px 20px 0px;
+    transition: 0.3s;
+    background: #2041BB;
+    -webkit-border-radius: 0px 20px 20px 0px;
+    -moz-border-radius: 0px 20px 20px 0px;
+    -ms-border-radius: 0px 20px 20px 0px;
+    -o-border-radius: 0px 20px 20px 0px;
+}
+
+.navbar-wrapper .navbar-item:hover span,
+.navbar-wrapper .navbar-item:hover i {
+    transition: 0.3s;
+    color: #fff;
+}
+
+.navbar-wrapper .navbar-item.nav-active {
+    border-radius: 0px 20px 20px 0px;
+    background: #2041BB;
+}
+
+.navbar-wrapper .navbar-item.nav-active span,
+.navbar-wrapper .navbar-item.nav-active i {
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .content-wrapper {
+        margin-left: 90px;
+    }
+    .navbar-wrapper {
+        width: 70px;
+        height: 100%;
+    }
+    .navbar-wrapper .navbar-item i,
+    .navbar-wrapper .navbar-logout i {
+        font-size: 24px;
+    }
+    .navbar-wrapper .navbar-item span,
+    .navbar-wrapper .navbar-logout span {
+        font-size: 12px;
+    }
+    .navbar-wrapper .navbar-item:hover {
+        border-radius: 0px 10px 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .content-wrapper {
+        margin-left: 80px;
+    }
+    .navbar-wrapper {
+        width: 60px;
+        height: 100%;
+    }
+    .navbar-wrapper .navbar-item i,
+    .navbar-wrapper .navbar-logout i {
+        font-size: 20px;
+    }
+    .navbar-wrapper .navbar-item span,
+    .navbar-wrapper .navbar-logout span {
+        font-size: 10px;
+    }
+    .navbar-wrapper .navbar-item:hover {
+        border-radius: 0px 10px 10px 0px;
+    }
+}
+
+
+/* OTHER */
+
+.rounded-20 {
+    border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -ms-border-radius: 15px 15px 15px 15px;
+    -o-border-radius: 15px 15px 15px 15px;
+}
+
+.rounded-15 {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.shadow-custom {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shadow-custom-2 {
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.blue-line {
+    height: 7px;
+    width: 100%;
+    background-image: linear-gradient(to right, #3c5eda, #d4dcf7);
+}
+
+
+/* TEXT */
+
+.text-primary {
+    color: #2041BB;
+}
+
+.text-link {
+    color: #2041BB;
+}
+
+.text-link:hover {
+    color: #486ae8;
+}
+
+.text-link-black {
+    color: rgb(24, 24, 24);
+}
+
+.text-link-black:hover {
+    transition: 0.2s;
+    color: #486ae8;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+
+/* BUTTON */
+
+.btn-primary {
+    background-color: #2041BB;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #486ae8;
+    color: #fff;
+}
+
+.btn-blue-gr {
+    background-image: linear-gradient(to right, #3759d6, #b9c7f7);
+    color: #fff;
+}
+
+.btn-blue-gr:hover {
+    background-image: linear-gradient(to right, #b9c7f7, #3759d6);
+    color: #fff;
+}
+
+
+/* PAGINATION */
+
+.page-link {
+    color: #2041BB;
+}
+
+.page-item.active .page-link {
+    background: #2041BB;
+}
+
+
+/* MARGIN PADDING */

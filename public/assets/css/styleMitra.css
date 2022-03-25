@@ -1,0 +1,106 @@
+/* COSTUMIZING SIDEBAR */
+
+.content-wrapper {
+    width: 100%;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    padding: 10px 10px 10px 0px;
+    border-radius: 0px 50px 50px 0px;
+    background: #fff;
+}
+
+.navbar-toggle i.bx-chevrons-right {
+    font-size: 24px;
+}
+
+.navbar-wrapper {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 85px;
+    height: 100%;
+    background: white;
+}
+
+.navbar-wrapper .navbar-item i,
+.navbar-wrapper .navbar-logout i,
+.navbar-wrapper .navbar-close i {
+    font-size: 32px;
+}
+
+.navbar-wrapper .navbar-item:hover {
+    border-radius: 0px 20px 20px 0px;
+    background: #2041BB;
+    transition: 0.3s;
+}
+
+.navbar-wrapper .navbar-close:hover i.bx {
+    color: #2041BB;
+    transition: 0.2s;
+}
+
+.navbar-wrapper .navbar-item:hover span,
+.navbar-wrapper .navbar-item:hover i {
+    transition: 0.3s;
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .content-wrapper {
+        margin-left: 90px;
+    }
+    .navbar-wrapper {
+        width: 70px;
+        height: 100%;
+    }
+    .navbar-wrapper .navbar-item i,
+    .navbar-wrapper .navbar-logout i {
+        font-size: 24px;
+    }
+    .navbar-wrapper .navbar-item span,
+    .navbar-wrapper .navbar-logout span {
+        font-size: 12px;
+    }
+    .navbar-wrapper .navbar-item:hover {
+        border-radius: 0px 10px 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 375) {
+    .content-wrapper {
+        margin-left: 80px;
+    }
+    .navbar-wrapper {
+        width: 60px;
+        height: 100%;
+    }
+    .navbar-wrapper .navbar-item i,
+    .navbar-wrapper .navbar-logout i {
+        font-size: 22px;
+    }
+    .navbar-wrapper .navbar-item span,
+    .navbar-wrapper .navbar-logout span {
+        font-size: 10px;
+    }
+    .navbar-wrapper .navbar-item:hover {
+        border-radius: 0px 10px 10px 0px;
+    }
+}
+
+
+/* CUSTOMIZING NAVBAR */
+
+.navbar-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.profile i.bx-user-circle {
+    font-size: 24px;
+    color: #000;
+}
