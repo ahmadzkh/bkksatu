@@ -1,35 +1,30 @@
-@extends('layouts.master')
-
+@extends('templates.main')
+@section('title', 'BKK 1 | Dashboard Admin')
 @section('css')
-<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="{{asset ('/assets/css/style.css')}}">
 
 <style>
     .title-page h1.fw-bold {
         margin-bottom: 60px;
     }
-
     .dropdown-menu {
         min-width: 0px;
     }
-
     .page-item:first-child .page-link {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
     }
-
     .page-item:last-child .page-link {
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
     }
     /* STYLING SEARCH */
-
     .search input {
         height: 60px;
         padding-left: 55px;
         font-size: 18px;
         border: 2px solid rgba(0, 0, 0, 0.2);
     }
-
     .search i.bx {
         z-index: 10;
         font-size: 30px;
@@ -38,52 +33,45 @@
         color: rgba(0, 0, 0, 0.5);
     }
     /* STYLING NEWS */
-
     .content .news .header {
         height: 150px;
         border-radius: 15px 15px 0px 0px;
         background-image: linear-gradient(to right, #2145c5, #7a92e4);
     }
-
     .content .news .header .tools {
         /* transition: 0.3s; */
         visibility: hidden;
     }
-
     .content .news .header:hover .tools {
         transition: 0.3s;
         visibility: visible;
         background: #7a92e4;
     }
-
     .content .news .header .tools a,
     .content .news .header .tools span {
         cursor: pointer;
         font-size: 26px;
     }
-
     .content .news .header .tools span i.bx,
     .content .news .header .tools a i.bx {
         line-height: 0px;
     }
-
     .content .news .content div {
         font-size: 14px;
     }
-
     .content.row {
         --bs-gutter-x: 0px;
     }
 </style>
 @endsection
 
-@section('section')
+@section('container')
     <div class="main-page">
         <!-- SIDEBAR -->
-        @include('layouts.sidebar-admin')
+        @include('partials.sidebar-admin')
 
         <!-- BG WAVES -->
-        <img src="/assets/img/wave2.svg" class="position-absolute waves">
+        <img src="{{asset ('/assets/img/wave2.svg')}}" class="position-absolute waves">
 
         <div class="py-3 content-wrapper">
             <!-- TITLE -->
